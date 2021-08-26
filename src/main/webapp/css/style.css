@@ -48,3 +48,25 @@ h2 {
     margin-left: auto;
     margin-right: auto;
 }
+
+#nav {
+	width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#nav a {
+	text-decoration: none;
+}
+
+.button {
+    color: #ffffff;
+	background-color: #009879;
+	width: 120px;
+	padding: 7px;
+	border-radius: 7px;
+}
+
+.button:hover {
+	background-color: #008968;
+}
