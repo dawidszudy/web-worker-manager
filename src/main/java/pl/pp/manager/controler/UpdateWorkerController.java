@@ -14,8 +14,8 @@ import javax.sql.DataSource;
 import java.io.IOException;
 import java.util.List;
 
-@WebServlet("/list")
-public class WorkersController extends HttpServlet {
+@WebServlet("/update-worker")
+public class UpdateWorkerController extends HttpServlet {
 
     @Resource(name = "web-worker-manager-db")
     private DataSource dataSource;
@@ -25,10 +25,7 @@ public class WorkersController extends HttpServlet {
         response.setContentType("text/html; charset=UTF-8");
         request.setCharacterEncoding("UTF-8");
 
-        List<Worker> workers = WorkersDBUtils.getWorkers(dataSource);
-        request.setAttribute("workers", workers);
-
-        RequestDispatcher dispatcher = request.getRequestDispatcher("/worker/list.jsp");
+        RequestDispatcher dispatcher = request.getRequestDispatcher("/worker/update-worker.jsp");
         dispatcher.forward(request, response);
     }
 
