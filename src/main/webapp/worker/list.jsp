@@ -42,7 +42,7 @@
                         <td>${worker.lastName}</td>
                         <td>${worker.salary}</td>
                         <td><a href="${link}">Edytuj</a></td>
-                        <td><a href="${deleteLink}">Usuń</a></td>
+                        <td><a onclick="return confirm('Czy na pewno usunąć pracownika?')" href="${deleteLink}">Usuń</a></td>
                     </tr>
                 </c:forEach>
 		    </tbody>
