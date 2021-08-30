@@ -14,30 +14,25 @@ import javax.sql.DataSource;
 import java.io.IOException;
 import java.util.List;
 
-@WebServlet("/add-worker")
-public class AddWorkerController extends HttpServlet {
+@WebServlet("/delete-worker")
+public class DeleteWorkerController extends HttpServlet {
 
     @Resource(name = "web-worker-manager-db")
     private DataSource dataSource;
 
     @Override
-    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         response.setContentType("text/html; charset=UTF-8");
         request.setCharacterEncoding("UTF-8");
 
-        String firstName = request.getParameter("first-name");
-        String lastName = request.getParameter("last-name");
-        double salary = Double.parseDouble(request.getParameter("salary"));
-
-        Worker worker = new Worker(firstName, lastName, salary);
-        WorkersDBUtils.addWorker(worker, dataSource);
+        int id = Integer.parseInt(request.getParameter("id"));
+        WorkersDBUtils.deleteWorkerById(id, dataSource);
 
         List<Worker> workers = WorkersDBUtils.getWorkers(dataSource);
         request.setAttribute("workers", workers);
 
         RequestDispatcher dispatcher = request.getRequestDispatcher("/worker/list.jsp");
         dispatcher.forward(request, response);
-
     }
 
 }
