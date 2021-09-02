@@ -28,11 +28,8 @@ public class DeleteWorkerController extends HttpServlet {
         int id = Integer.parseInt(request.getParameter("id"));
         WorkersDBUtils.deleteWorkerById(id, dataSource);
 
-        List<Worker> workers = WorkersDBUtils.getWorkers(dataSource);
-        request.setAttribute("workers", workers);
+        response.sendRedirect(request.getContextPath() + "/list");
 
-        RequestDispatcher dispatcher = request.getRequestDispatcher("/worker/list.jsp");
-        dispatcher.forward(request, response);
     }
 
 }

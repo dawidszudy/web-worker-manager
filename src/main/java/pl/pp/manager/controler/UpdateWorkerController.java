@@ -46,12 +46,8 @@ public class UpdateWorkerController extends HttpServlet {
         Worker worker = new Worker(id, firstName, lastName, salary);
         WorkersDBUtils.updateWorker(worker, dataSource);
 
-        List<Worker> workers = WorkersDBUtils.getWorkers(dataSource);
-        request.setAttribute("workers", workers);
+        response.sendRedirect(request.getContextPath() + "/list");
 
-
-        RequestDispatcher dispatcher = request.getRequestDispatcher("/worker/list.jsp");
-        dispatcher.forward(request, response);
     }
 
 }
