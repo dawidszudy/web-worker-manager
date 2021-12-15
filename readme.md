@@ -1,11 +1,11 @@
-#Web Worker Manager
+# Web Worker Manager
 
-##General Information
+## General Information
 Inspired by application to manage workers. 
 The application that helps at managing workers by 
 edition in the database.
 
-##Screenshots
+## Screenshots
 
 ### Worker form
 ![worker form](img/addworker.png)
@@ -13,7 +13,7 @@ edition in the database.
 ### Table with workers
 ![list of workers](./img/listworkers.png)
 
-##Technologies Used
+## Technologies Used
 - Java
 - JSP
 - MySQL
@@ -22,25 +22,25 @@ edition in the database.
 - Maven
 - MVC
 
-##Features
+## Features
 - Table with data of workers
 - List of workers button
 - Add worker button
 - Edition button for each worker
 - Delete button for each worker
 
-###Functions
+### Functions
 - Add new workers to database
 - Edition of workers data
 - Delete of worker
 - Display a list of workers data
 
-##Usage
+## Usage
 Install and use Tomcat and Xampp 
 (modules Apache and MySQL). Next Build ”mvn package” 
 (file web-worker-manager.war) at terminal. 
 Next copy file to folder apache-tomcat. 
 Next enter to ”localhost:8080/web-worker-manager/list”
 
-##Room for Improvement
+## Room for Improvement
 - Table with departments
