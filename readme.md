@@ -40,7 +40,8 @@ Install and use Tomcat and Xampp
 (modules Apache and MySQL). Next Build ”mvn package” 
 (file web-worker-manager.war) at terminal. 
 Next copy file to folder apache-tomcat. 
-Next enter to ”localhost:8080/web-worker-manager/list”
+Next enter ”localhost:8080/web-worker-manager/list” 
+to browser window.
 
 ## Room for Improvement
 - Table with departments
