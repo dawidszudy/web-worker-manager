@@ -11,11 +11,11 @@
 </head>
 <body>
 	<div id="header">
-		<h2>Edytuj pracownika</h2>
+		<h2>Edit worker</h2>
 	</div>
 		<div id="nav">
 		<a href="/web-worker-manager/list">
-			<div class="button">Lista pracowników</div>
+			<div class="button">Workers list</div>
 		</a>
 	</div>
 	<div id="container">
@@ -23,17 +23,17 @@
 			<fieldset>
 			    <input type="hidden" name="id" value="${worker.id}" />
 
-				<label for="first-name">Imię</label>
+				<label for="first-name">Name</label>
 				<input type="text" id="first-name" name="first-name" value="${worker.firstName}" />
 
-				<label for="last-name">Nazwisko</label>
+				<label for="last-name">Last name</label>
 				<input type="text" id="last-name" name="last-name" value="${worker.lastName}" />
 
-				<label for="salary">Wypłata</label>
+				<label for="salary">Salary</label>
 				<input type="text" id="salary" name="salary" value="${worker.salary}" />
 			</fieldset>
 
-			<button type="submit">Zapisz</button>
+			<button type="submit">Save</button>
 		</form>
 	</div>
 

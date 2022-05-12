@@ -3,7 +3,7 @@
 ## General Information
 Inspired by application to manage workers. 
 The application that helps at managing workers by 
-edition in the database.
+an edition in the database.
 
 ## Screenshots
 

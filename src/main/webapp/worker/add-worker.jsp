@@ -11,27 +11,27 @@
 </head>
 <body>
 	<div id="header">
-		<h2>Dodaj nowego pracownika</h2>
+		<h2>Add new worker</h2>
 	</div>
 		<div id="nav">
 		<a href="/web-worker-manager/list">
-			<div class="button">Lista pracowników</div>
+			<div class="button">Workers list</div>
 		</a>
 	</div>
 	<div id="container">
 		<form method="post" action="/web-worker-manager/add-worker">
 			<fieldset>
-				<label for="first-name">Imię</label>
+				<label for="first-name">Name</label>
 				<input type="text" id="first-name" name="first-name" />
 
-				<label for="last-name">Nazwisko</label>
+				<label for="last-name">Last name</label>
 				<input type="text" id="last-name" name="last-name" />
 
-				<label for="salary">Wypłata</label>
+				<label for="salary">Salary</label>
 				<input type="text" id="salary" name="salary" />
 			</fieldset>
 
-			<button type="submit">Dodaj pracownika</button>
+			<button type="submit">Add worker</button>
 		</form>
 	</div>
 

@@ -11,22 +11,22 @@
 </head>
 <body>
 	<div id="header">
-		<h2>Lista pracowników</h2>
+		<h2>Workers list</h2>
 	</div>
 	<div id="nav">
 		<a href="worker/add-worker.jsp">
-			<div class="button">Dodaj pracownika</div>
+			<div class="button">Add worker</div>
 		</a>
 	</div>
 	<div id="container">
         <table class="styled-table">
 	        <thead>
                 <tr>
-                    <th>Imię</th>
-                    <th>Nazwisko</th>
-                    <th>Pensja</th>
-                    <th>Edytuj</th>
-                    <th>Usuń</th>
+                    <th>Name</th>
+                    <th>Last name</th>
+                    <th>Salary</th>
+                    <th>Edit</th>
+                    <th>Delete</th>
                 </tr>
 		    </thead>
 		    <tbody>
@@ -41,8 +41,8 @@
                         <td>${worker.firstName}</td>
                         <td>${worker.lastName}</td>
                         <td>${worker.salary}</td>
-                        <td><a href="${link}">Edytuj</a></td>
-                        <td><a onclick="return confirm('Czy na pewno usunąć pracownika?')" href="${deleteLink}">Usuń</a></td>
+                        <td><a href="${link}">Edit</a></td>
+                        <td><a onclick="return confirm('Are you sure to delete worker?')" href="${deleteLink}">Delete</a></td>
                     </tr>
                 </c:forEach>
 		    </tbody>

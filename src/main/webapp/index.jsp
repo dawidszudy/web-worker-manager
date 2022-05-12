@@ -7,6 +7,6 @@
 </head>
 <body>
     <h2>Web Worker Manager!</h2>
-    <a href='/web-worker-manager/list'>Lista pracowników</a>
+    <a href='/web-worker-manager/list'>Workers list</a>
 </body>
 </html>
